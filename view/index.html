@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <<![endif]-->
+<html id="html">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home | Vinit Srivastava</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./drawables/logo test 2.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+
+    <!--Navbar -->
+    <section class="navbar" id ="navbar">
+      <div class="navbar__inner">
+        <a href="./index.html" style="text-decoration: none;">
+          <h5 class="h5 navbar__logo--text">Vinit___</h5>
+        </a>
+        <div class="navbar__button-wrapper">
+          <a href="#" class="button navbar__button u-button-special" onclick= "document.getElementById('certificates').scrollIntoView({behavior: 'smooth'});">Home</a>
+          <a class="button navbar__button" id="projects_goto" onclick= "document.getElementById('projects').scrollIntoView({behavior: 'smooth'});">Projects</a>
+          <a  class="button navbar__button u-padding-left-small" id="certificates_goto" onclick= "document.getElementById('certificates').scrollIntoView({behavior: 'smooth'});">Certificates</a>
+          <a href class="button navbar__button u-padding-left-small">Community</a>
+          <a class="button navbar__button u-padding-left-small" id="contact_goto" id="certificates_goto" onclick= "document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</a>
+        </div>
+
+        <div class="navbar__menubar" id="menubar" >
+          <div class="navbar__menubar--line" id="menubar__line">
+              &nbsp;
+          </div>
+        </div>
+    </section>
+
+    <!-- NAVBAR MOBILE SECTION  -->
+    <div class="navbar__mobile u-hidden" id="navbar_mobile">
+      <div class="navbar__button-wrapper--mobile">
+          <a href="./index.html" class="h5 navbar__button u-button-special u-margin-bottom-3" id="homeNav">Home</a>
+          <a href="./index.html#projects" class="h5 navbar__button u-padding-left-small u-margin-bottom-3" id="projectNav">Projects</a>
+          <a href="./index.html#certificates" class="h5 navbar__button u-padding-left-small u-margin-bottom-3" id="certNav">Certificates</a>
+          <div class="u-flex">
+            <a href="./community.html" class="h5 navbar__button u-padding-left-small u-margin-bottom-3" id="communityNav">Community</a>
+            <span class="u-new-tag body2">New</span>
+          </div>
+          <a href="./index.html#contact" class="h5 navbar__button u-padding-left-small u-margin-bottom-3" id="contactNav">Contact</a>
+      </div>
+    </div>
+    
+
+
+    <!-- Hero Header -->
+
+    <section class="header" id="header">
+        <div class="header__inner">
+            <div class="header__left">
+                <h2 class="h2 header__heading">
+                    Vinit Srivastava<br>
+                </h2>
+                <p class="header__tag body2">
+                  UI-UX Designer | Developer 
+                </p>
+                <p class="body1 header__sub-heading">
+                    I design & code attractive and beautiful<br>
+                     screens & I love what I do   
+                </p>
+                <!-- <a href = "#" class="btn--underline button header__cta">Let's chat</a> -->
+                  <p class="button btn--neon  header__cta" id = "resume-btn" target="_blank">
+                    <!-- <a class="btn--neon__text button" href="https://drive.google.com/file/d/1BL6SYl_y8mepaneLY8qbUcWYJfZGQuik" target="_blank">View resume</a> -->
+                    <a class="btn--neon__text button" href = 'https://drive.google.com/file/d/1BL6SYl_y8mepaneLY8qbUcWYJfZGQuik' target="_blank" style = 'text-decoration: none'>View Resume</a>
+                  </p>
+                  <p class="button btn--neon  header__cta2" id = 'headerCta2'>
+                    <a class="btn--neon__text button" href = 'https://github.com/gitPiyushhh' target="_blank" style = 'text-decoration: none'>View Github</a>
+                  </p>
+                <a href="#about">
+                </a>
+            </div>
+            
+
+            <div class="header__right">
+              <div class="header__banner">
+                <img src="./drawables/banner.jpg" class="header__banner-img">
+              </div>
+
+                <div class="header__img-container">
+                  <img src="./drawables/image 1.png" alt="" class="header__img" id="img" style="visibility:hidden">   
+
+                  <video class="header__video" controls autoplay>
+                    <source src="" type="video/mp4" id="vdo">
+                  </video>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Intro -->
+
+    <section class="about" id="about">
+        <div class="about__inner">
+            <div class="about__left">
+                
+                <div class="about-card" id="aboutCard1">
+                    <h6 class="about-card__heading h5">Design</h6>
+    
+                    <p class="about-card__text body2">I design robust & user centric interfaces</p>
+    
+                    <p class="about-card__number button" style = 'color: #F9F4E8;'>5 Projects</p>
+
+                    <div class="about-card__img">
+                        <span class="iconify" data-icon="gis:measure-line"></span>
+                    </div>
+                </div>
+
+                <div class="about-card" id = 'aboutCard2'>
+                    <h6 class="about-card__heading h5">Frontend</h6>
+    
+                    <p class="about-card__text body2">I develop frontend with seamless coding</p>
+    
+                    <p class="about-card__number button" style = 'color: #F9F4E8;'>5 Projects</p>
+
+                    <div class="about-card__img">
+                        <span class="iconify" data-icon="bi:code-slash"></span>
+                    </div>
+                </div>
+
+                <div class="about-card" id = 'aboutCard3'>
+                    <h6 class="about-card__heading h5">Backend</h6>
+    
+                    <p class="about-card__text body2">I can write robust & scalable backend code</p>
+    
+                    <p class="about-card__number button" style = 'color: #F9F4E8;'>5 Projects</p>
+
+                    <div class="about-card__img">
+                        <span class="iconify" data-icon="ant-design:cloud-server-outlined"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__right">
+              <h6 class="about__heading h6">Intro</h6>
+
+              <h5 class="about__sub-heading h5">
+                Hello! I'm Vinit Srivastava
+              </h5>
+
+              <p class="about__caption body1">Every great project begin with the  right people..</p>
+              
+              <p class="about__text body1">Namaste, I am Vinit. I am an entry level web-developer and a final year grad.My primary programming language is Python.Its been more than a year till I started my journey as a web developer. I have completed a handful of projects that fit to business & consumer needs. In addition to this I am also a interface & experience designer which powers me to make useful & attractive interfaces.Currently I am learning react lifecycle and other type of hooks by Udemy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects u-mt-20" id="projects">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Skills</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">All that I know!</h6>
+        </div>
+
+        <div class="projects__content-wrapper" id = 'skills_container-out'>
+
+          <div class="skills_contanier" id = 'skills_contanier'>
+            <div class="skills_skill" id = 'skills_skill'>
+              <img src="./drawables/python.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/node-dot-js.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/django.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/html5.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/css3.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/postman.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/git.png" alt="" class = 'skills_icon'>
+            </div>
+            
+            <div class="skills_skill">
+              <img src="./drawables/github.png" alt="" class = 'skills_icon'>
+            </div>
+            
+            <div class="skills_skill">
+              <img src="./drawables/figma.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/sass.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/npm.png" alt="" class = 'skills_icon'>
+            </div>
+            
+            <!-- Repeat -->
+
+
+            <div class="skills_skill">
+              <img src="./drawables/sass.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/figma.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/github.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/git.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/postman.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/css3.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" >
+              <img src="./drawables/html5.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/django.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill">
+              <img src="./drawables/node-dot-js.png" alt="" class = 'skills_icon'>
+            </div>
+
+            <div class="skills_skill" id = 'skills_skill'>
+              <img src="./drawables/python.png" alt="" class = 'skills_icon'>
+            </div>
+
+
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- 3. Projects -->
+
+    <section class="projects u-mt-20" id="projects">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Projects</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Recent from 'Knapsack'</h6>
+        </div>
+
+        <div class="projects__content-wrapper">
+          
+
+          <!-- Porject-1 -->
+          <div class="project-card" id ='#projectCard'>
+            <img src="./drawables/GetNewslogo.png" alt="Dynamic Alert & Blackspot identifcation on Routemap" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">GetNews</p>
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Full stack website(MERN)</p></li><br>
+              <li><p class="body2 project-card__text">API-Geolocation Querries</p></li><br>
+              <li><p class="body2 project-card__text">JWT & firebase authentication</p></li><br>
+              <li><p class="body2 project-card__text">Server side rendering </p></li>
+            </ul>
+  
+            <a href="#projects" class="project-card__link button" style="text-align: center;"></a>
+              <p class="iconify body2" style="text-align: center;">Ongoing..</p>
+            </div>
+          </div>
+
+          <!-- project-2 -->
+          <div class="project-card" id ='projectCard2'>
+            <img src="./drawables/Techhublogo.png" alt="Dynamic Alert & Blackspot identifcation on Routemap" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">TechHub</p>
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Full stack website(MERN)</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS,JS, Node.js</p></li><br>
+              <li><p class="body2 project-card__text">Json-API </p></li><br>
+              <li><p class="body2 project-card__text">deploy on firebase </p></li>
+            </ul>
+  
+            <a href="https://techhub-def2e.web.app/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- Porject-3 -->
+            <div class="project-card"  id = 'projectCard3'>
+            <img src="./drawables/Laptoppricelogo.png" alt="Kislay Foundation" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Laptop Price Prediction</p>
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Anaconda-Using jupyer notebook</p></li><br>
+              <li><p class="body2 project-card__text">csv file,pickle file</p></li><br>
+              <li><p class="body2 project-card__text">Python Libraries</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on heroku</p></li>
+            </ul>
+
+              <a href="https://github.com/VinitSrivastava2002/LAPTOP__PRICE_PREDICT" class="project-card__link button" target="_blank">
+                <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Project-4 -->
+        <div class="projects-hidden projects__content-wrapper u-hidden" id = 'projectsHidden'>
+          <div class="project-card">
+            <img src="./drawables/natours2.jpg" alt="Natours" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Natours</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Tours & Travel Booking app {Only Frontend}</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS, SCSS, Flexbox, netlify</p></li><br>
+              <li><p class="body2 project-card__text">Pleasant UI</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on netlify</p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="http://nature-to-natours.netlify.app/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./drawables/deepak website (1).png" alt="Natours" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Doctero</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Appointments Booking System for doctors</p></li><br>
+              <li><p class="body2 project-card__text">Node.js, node-mailer for mailing</p></li><br>
+              <li><p class="body2 project-card__text">Pleasant UI</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on heroku</p></li><br>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://deepak-physio.herokuapp.com/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+
+          <div class="project-card">
+            <img src="./drawables/musicify.png" alt="Kislay Foundation" class = "project-card__img">
+  
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Musicify.io</p>
+  
+            <!-- <p class="h6 project-card__heading">Tech Stack:</p> -->
+  
+            <ul class="project-card__list">
+              <li><p class="body2 project-card__text">Online Music Player inspired from</p></li><br>
+              <li><p class="body2 project-card__text">HTML/CSS, SCSS, JS, DOM</p></li><br>
+              <li><p class="body2 project-card__text">Pleasant UI</p></li><br>
+              <li><p class="body2 project-card__text">Deployed on netlify</p></li>
+            </ul>
+  
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://musicify-io.netlify.app/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+        </div>
+      
+
+      <p class="button btn--neon projects__cta  u-mt-7" id="projectHide">
+        <span class="btn--neon-1"></span>
+        <span class="btn--neon-2"></span>
+        <span class="btn--neon-3"></span>
+        <span class="btn--neon-4"></span>
+        View All Projects
+      </p>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- 4. Certifications -->
+    <section class="projects u-mt-20" id="certificates">
+      <div class="projects__inner">
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Certifications</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Yes! I'm certified</h6>
+        </div>
+        <div class="projects__content-wrapper">
+
+          <!-- Certificate-1 -->
+          <div class="project-card" id = 'Certificate1'>
+            <img src="./drawables/salesforcecerti.jpg" alt="Salesforce" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">Salesforce Developer</p>
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://smartinternz.com/internships/salesforce_certificates/b3bddc1e5e15f4f6453783189f96e32b" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+          
+
+          <!-- Certificate-2 -->
+        <div class="project-card" id="Certificate2">
+          <img src="./drawables/cybersecurity.jpeg.jpg" alt="cybersecurity" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Cybersecurity </p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.linkedin.com/posts/vinit-srivastava-2ba5191a6_cybersecurity-virtual-internship-activity-7038386893276733440-EUM9?utm_source=share&utm_medium=member_desktop" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+          
+
+           <!-- Certificate-3 -->
+           <div class="project-card" id = 'Certificate3'>
+            <img src="./drawables/problemsolving.png" alt="Kislay Seva Sansthan" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">DSA-Problem Solving</p>
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.hackerrank.com/certificates/6afb17030afc" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+           <!-- done -->
+      </div>
+
+      <div class="projects-hidden projects__content-wrapper u-hidden" id = 'certsHidden'>
+
+        <!-- Certificate-4 -->
+        <div class="project-card" >
+          <img src="./drawables/python.png" alt="Python" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Python Certification</p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.hackerrank.com/certificates/6afb17030afc" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+        <!-- Certificate-5 -->
+        <div class="project-card">
+          <img src="./drawables/css.png" alt="css" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">CSS Certification</p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.hackerrank.com/certificates/005e3ade1084" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+        
+
+        <!-- Certificate-6 -->
+        <div class="project-card" >
+          <img src="./drawables/UI-UX.jpeg" alt="ui/ux" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">UI/UX Google</p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://coursera.org/share/bd995e89f8f658fe1ed6ce42e28d41d9" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+        <!-- Done -->
+      </div>
+
+
+      <div class="projects-hidden projects__content-wrapper u-hidden" id = 'certsHidden2'>
+
+        <!-- Certificate-7 -->
+        <div class="project-card">
+          <img src="./drawables/oopscerti.jpg" alt="oops" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">OOPs</p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.linkedin.com/posts/vinit-srivastava-2ba5191a6_oops-activity-6980598513063591937-Nj92?utm_source=share&utm_medium=member_desktop" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+
+        <!-- Certificate-8 -->
+        <div class="project-card">
+          <img src="./drawables/lernathoncerti.jpg" alt="Learnathon" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Learnathon</p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.linkedin.com/posts/vinit-srivastava-2ba5191a6_learnathon-ictacademy-activity-6930787110345932800-sn4F?utm_source=share&utm_medium=member_desktop" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+        
+         <!-- Certificate-9 -->
+         <div class="project-card">
+          <img src="./drawables/gitcert.png" alt="GIT" class = "project-card__img">
+          <div class="project-card__wrapper">
+            <p class="h5 project-card__title">Github Certification</p>
+          <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+          <a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiI3NTgiLCJjZXJ0aWZpY2F0ZV91cmwiOiJodHRwczpcL1wvY2VydGlmaWNhdGVzLnNpbXBsaWNkbi5uZXRcL3NoYXJlXC90aHVtYl80MzE0NDQ0XzE2ODMzNzY3NDMucG5nIiwidXNlcm5hbWUiOiJWaW5pdCBTcml2YXN0YXZhIn0%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F2823%2FGIT%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1069865706273438425&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVN%2FEvsTAqMDKsqkoCAKKc%2BH8lAAAA" class="project-card__link button" target="_blank">
+            <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+          </div>
+        </div>
+        <!-- Done -->
+      </div>
+
+      <p class="button btn--neon projects__cta  u-mt-7" id="certHide">
+        <span class="btn--neon-1"></span>
+        <span class="btn--neon-2"></span>
+        <span class="btn--neon-3"></span>
+        <span class="btn--neon-4"></span>
+        View All Certifications
+      </p>
+      </div>
+    </section>
+
+    <!-- 4. Portals  -->
+    <section class="projects u-mt-20" id="coding">
+      <div class="projects__inner">
+
+        <div class="heading-wrapper">
+          <h2 class="h2 heading-wrapper__heading">Platforms'Stats</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Hands on Coding</h6>
+        </div>
+
+        <div class="projects__content-wrapper">
+          
+
+          <!-- GFG -->
+          <div class="project-card" style="width: 25rem" id = 'platform1'>
+            <img src="./drawables/gfg 2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img" >
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">GeeksForGeeks</p>
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://auth.geeksforgeeks.org/user/vinitssw1qp/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- Leetcode -->
+           <div class="project-card" style="width: 25rem" id = 'platform2'>
+            <img src="./drawables/leetcode2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">LeetCode</p>
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://leetcode.com/Vinit_srivastava/" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+           <!-- codechef -->
+           <div class="project-card" style="width: 25rem" id = 'platform3'>
+            <img src="./drawables/codechef2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">CodeChef</p>
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.codechef.com/users/vinit_02" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+
+          <!-- Hackerrank -->
+          <div class="project-card" style="width: 25rem" id = 'platform4'>
+            <img src="./drawables/hackerrank2.jpg" alt="Kislay Seva Sansthan" class = "project-card__img">
+            <div class="project-card__wrapper">
+              <p class="h5 project-card__title">HackerRank</p>
+            <!-- <a href="joinkislay.herokuapp.com" class="project-card__link button">Visit here &#x1F517;</span> </a> -->
+            <a href="https://www.hackerrank.com/Vinitsss1234" class="project-card__link button" target="_blank">
+              <span class="iconify" data-icon="bx:bx-link-external"></span> </a>
+            </div>
+          </div>
+          <!-- Done -->
+      </div>
+
+      <p class="button btn--neon projects__cta  u-mt-7">
+        <span class="btn--neon-1"></span>
+        <span class="btn--neon-2"></span>
+        <span class="btn--neon-3"></span>
+        <span class="btn--neon-4"></span>
+        View Other Accounts
+      </p>
+      </div>
+    </section>
+
+
+
+
+    <!-- 4. Recommendations -->
+    
+    <!-- <section class="testimonials" id="testimonials">
+      <div class="testimonials__inner">
+
+        <div class="heading-wrapper u-mt-7">
+          <h2 class="h2 heading-wrapper__heading">Recommendations</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Those who recommend me</h6>
+        </div>
+
+        <div class="testimonials__content-wrapper"> -->
+
+          <!-- 1. Card-1 -->
+          <!-- <div class="testimonial-card" id="test-card-1">
+            <h1 class="h1 testimonial-card__after">&#34;</h1>
+
+            <h5 class="h5 testimonial-card__title">Praveen Pandey</h5>
+
+            <h6 class="caption testimonial-card__post">College</h6>
+            
+            <p class="body1 testimonial-card__text">Vinit has performed all the tasks with near perfection. His technical, collaborating & empathetic skills are good. I recommend him & wish him luck for future..</p>
+          </div> -->
+
+
+          <!-- 2. Card-2 -->
+          <!-- <div class="testimonial-card u-hidden" style="height: 100% !important;" id="test-card-2">
+            <div class="project-card__yet-to-come">
+              <h3 class="h2 project-card__coming">Coming</h3>
+
+              <div class="project-card__wrapper-soon">
+                <h5 class="h1 project-card__s">	&#83; </h5>
+                <h5 class="h1 project-card__o">	&#9675; </h5>
+                <h5 class="h1 project-card__o--blink">	&#9679; </h5>
+                <h5 class="h1 project-card__n">	&#78; </h5>
+              </div>
+  
+            </div>
+          </div> -->
+
+          <!-- 3. Card-3 -->
+          <!-- <div class="testimonial-card u-hidden" style="height: 100% !important;" id="test-card-3">
+            <div class="project-card__yet-to-come">
+              <h3 class="h2 project-card__coming">Coming</h3>
+
+              <div class="project-card__wrapper-soon">
+                <h5 class="h1 project-card__s">	&#83; </h5>
+                <h5 class="h1 project-card__o">	&#9675; </h5>
+                <h5 class="h1 project-card__o--blink">	&#9679; </h5>
+                <h5 class="h1 project-card__n">	&#78; </h5>
+              </div>
+  
+            </div>
+          </div> -->
+          
+
+          <!-- <div class="testimonials__move">
+            <h2 class="h3 testimonials__symbol">&#8594;</h2>
+          </div>
+  
+          <div class="testimonials__move u-rotate-left testimonials__move--back">
+            <h2 class="h3 testimonials__symbol">&#8594;</h2>
+          </div> -->
+
+        <!-- </div> -->
+
+        
+
+        <!-- Dots container -->
+
+        <div class="testimonials__dot-container">
+          <a  class="testimonials__dote " id="dot-1"></a>
+          <a  class="testimonials__dote " id="dot-2"></a>
+          <a  class="testimonials__dote " id="dot-3"></a>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- 5. Contact -->
+
+    <section class="contact" id = "contact">
+      <div class="contact__inner">
+        <div class="heading-wrapper u-mt-7">
+          <h2 class="h2 heading-wrapper__heading">Let's connect</h2>
+          <h6 class="body1 heading-wrapper__sub-heading">Can we start with a "hi"!</h6>
+        </div>
+
+        <div class="contact__content-wrapper">
+
+          <a href="https://www.linkedin.com/in/vinit-srivastava-2ba5191a6/" target="_blank"><img src="./drawables/linkedin.svg" alt="" class="contact__img"></a>
+          <a href="https://github.com/VinitSrivastava2002" target="blank"><img src="./drawables/github.svg" alt="" class="contact__img"></a>
+          <a href="https://dribbble.com/VinitSrivastava02" target="blank"><img src="./drawables/dribbble.svg" alt="" class="contact__img"></a>
+          <a href="mailto:@vinitsss1234@gmail.com" target="blank"><img src="./drawables/outgoing_mail.svg" alt="" class="contact__img"></a>
+
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- 6. Footer -->
+
+    <section class="footer">
+      <div class="footer__inner">
+        <h4 class="h6 footer__copyright">All copyrights reserved to Vinit &copy; 2023</h4>
+      </div>
+    </section>
+
+
+    <!-- ////////////////////////  JS Files  ///////////////////////////////// -->
+
+    <script src="./js/script.js" async defer></script> 
+    <!-- <script src="script.js" async defer></script> -->
+    
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+
+    <!-- ////////////////////////  FOnts Files  ///////////////////////////////// -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <!-- ////////////////////////  Icons Files  ///////////////////////////////// -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+
+  </body>
+</html>
